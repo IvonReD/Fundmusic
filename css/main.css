@@ -11,8 +11,12 @@ body{
     opacity:0.9;
 }
 
-.navbar li a, .navbar .navbar-brand { 
+.navbar li a{ 
     color: #FFFFFF !important;
+}
+
+#img-nav {
+    height: 7vh;
 }
 
 .navbar-nav li a:hover {
