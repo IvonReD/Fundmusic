@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+    color: #FFFFFF;
+} 
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 15px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+}
+
+.navbar li a, .navbar .navbar-brand { 
+    color: #FFFFFF !important;
+}
+
+.navbar-nav li a:hover {
+    color: #F4D35E !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: black !important;
+}
+.dropdown-menu  {
+    background-color: black !important;
+}
+.dropdown-menu li a {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+}
+
+
+.dropdown-menu li a:hover {
+    color: #F4D35E !important;
+}
+
+    /* Add a gray background color and some padding to the footer */
+     footer {
+     background-color: black;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+      height: 100vh;
+  }
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
