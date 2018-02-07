@@ -2,6 +2,10 @@ body{
     background-color: black;
     color: #FFFFFF;
 } 
+.hr-1{
+    
+    border-top: 2px solid #F4D35E ;;
+}
 .navbar {
     margin-bottom: 0;
     background-color: #2d2d30;
@@ -16,7 +20,7 @@ body{
 }
 
 #img-nav {
-    height: 7vh;
+    height: 5vh;
 }
 
 .navbar-nav li a:hover {
@@ -105,4 +109,12 @@ body{
 .btn-up:hover {
   text-decoration: none;
   color: white;
+}
+
+/*FOOTER*/
+.icon-footer{
+    margin:5%;
+} 
+.foot{
+   background: linear-gradient(black,  #30343f);
 }
