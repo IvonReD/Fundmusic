@@ -1,5 +1,5 @@
 ## WIREFRAME
 ![wireframe](assets/img/fundmusic.jpg)
 
-##PALETA DE COLORES
+## PALETA DE COLORES
 ![Paleta de colores](assets/img/paleta.jpg)
