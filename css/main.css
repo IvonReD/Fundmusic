@@ -104,11 +104,18 @@ body{
   height: 2.5em;
   font-weight: 500;
   padding: .5em;
+  display: inline-block;
+  border: none;
 }
 
 .btn-up:hover {
   text-decoration: none;
   color: white;
+}
+.btn-up-disabled{
+    background-color:   #30343f;
+    border: none;
+    color: white;
 }
 /*EVENTOS*/
 #place{
@@ -125,12 +132,15 @@ body{
 } 
 .foot{
    background: linear-gradient(black,  #30343f);
+   margin-top: 15vh;
 }
 
 /*Súmate*/
 .registro-b{
     height: 50vh;
-    background-image: url(../assets/img/band.jpg);
+    background-image: url(https://media.giphy.com/media/3og0IUTy80RuWleuRi/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .registro-text{
     color: white;
@@ -138,4 +148,12 @@ body{
 .thumbnail{
 background-color: transparent;
 border: none;
+}
+.p-b{
+    padding-top: 25vh; 
+}
+/*MODAL*/
+.modal-body,.modal-header, .modal-footer{
+    background-color: black;
+    color: #F4D35E;
 }
