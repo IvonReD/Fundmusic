@@ -110,7 +110,15 @@ body{
   text-decoration: none;
   color: white;
 }
+/*EVENTOS*/
+#place{
+    color:#F4D35E;
 
+}
+.img-event{
+    width:  100px;
+    height: 100px;
+}
 /*FOOTER*/
 .icon-footer{
     margin:5%;
