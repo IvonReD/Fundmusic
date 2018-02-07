@@ -126,3 +126,16 @@ body{
 .foot{
    background: linear-gradient(black,  #30343f);
 }
+
+/*Súmate*/
+.registro-b{
+    height: 50vh;
+    background-image: url(../assets/img/band.jpg);
+}
+.registro-text{
+    color: white;
+}
+.thumbnail{
+background-color: transparent;
+border: none;
+}
