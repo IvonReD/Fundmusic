@@ -57,10 +57,6 @@ body{
 }
 
 
-     footer {
-     background-color: black;
-      padding: 25px;
-    }
     
   .carousel-inner img {
       width: 100%; /* Set width to 100% */
@@ -68,6 +64,10 @@ body{
       min-height:200px;
       height: 100vh;
   }
+
+.cont-views{
+    margin-top: 7vh;
+}
 
   @media (max-width: 600px) {
     .carousel-caption {
