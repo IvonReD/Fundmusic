@@ -2,6 +2,10 @@ body{
     background-color: black;
     color: #FFFFFF;
 } 
+.hr-1{
+    
+    border-top: 2px solid #F4D35E ;;
+}
 .navbar {
     margin-bottom: 0;
     background-color: #2d2d30;
@@ -11,8 +15,12 @@ body{
     opacity:0.9;
 }
 
-.navbar li a, .navbar .navbar-brand { 
+.navbar li a{ 
     color: #FFFFFF !important;
+}
+
+#img-nav {
+    height: 5vh;
 }
 
 .navbar-nav li a:hover {
@@ -101,4 +109,20 @@ body{
 .btn-up:hover {
   text-decoration: none;
   color: white;
+}
+/*EVENTOS*/
+#place{
+    color:#F4D35E;
+
+}
+.img-event{
+    width:  100px;
+    height: 100px;
+}
+/*FOOTER*/
+.icon-footer{
+    margin:5%;
+} 
+.foot{
+   background: linear-gradient(black,  #30343f);
 }
