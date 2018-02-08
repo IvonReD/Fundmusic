@@ -56,13 +56,14 @@ body{
     color: #F4D35E !important;
 }
 
-
-    
-  .carousel-inner img {
+#myCarousel{
+    height: 95vh;
+}
+.carousel-inner img {
       width: 100%; /* Set width to 100% */
       margin: auto;
       min-height:200px;
-      height: 100vh;
+      height: 95vh;
   }
 
 .cont-views{
@@ -75,7 +76,9 @@ body{
     }
   }
 /*ESTILOS PUBLICACIÓN*/
-
+.h-95{
+    height: 95vh;
+}
   #update:placeholder{
   color: white;
 }
@@ -142,6 +145,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.registro-f{
+
+}
 .registro-text{
     color: white;
 }
@@ -156,4 +163,19 @@ border: none;
 .modal-body,.modal-header, .modal-footer{
     background-color: black;
     color: #F4D35E;
+}
+
+.inner-addon{
+    position: relative;
+}
+.right-addon .glyphicon{
+    right: 0px;
+}
+.right-addon input{
+    padding-right: 30px;
+}
+
+/*NOSOTROS*/
+.seccion{
+    height: 80vh;
 }
