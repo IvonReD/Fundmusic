@@ -1,8 +1,11 @@
  // FUNCIÓN CALENDARIO MODAL
-$(function(){
-$('.input-group.date').datepicker({
-    calendarWeeks: true,
-    todayHighlight: true,
-    autoclose: true
-});  
-});
+$(document).ready(
+	function() {
+		$("datepicker").datepicker(
+		{
+				changeMonth:true;
+				changeYear:true;
+				dateFormat: "dd-MM-yy";
+		})
+	}
+	)
