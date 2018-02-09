@@ -58,6 +58,7 @@ body {
   color: #F4D35E !important;
 }
 
+
 .carousel-inner img {
   width: 100%;
   /* Set width to 100% */
@@ -69,6 +70,20 @@ body {
 .cont-views {
   margin-top: 7vh;
 }
+#myCarousel{
+    height: 95vh;
+}
+.carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+      height: 95vh;
+  }
+
+.cont-views{
+    margin-top: 7vh;
+
+}
 
 @media (max-width: 600px) {
   .carousel-caption {
@@ -78,7 +93,14 @@ body {
 
 /*ESTILOS PUBLICACIÓN*/
 
+
 #update:placeholder {
+
+.h-95{
+    height: 95vh;
+}
+  #update:placeholder{
+
   color: white;
 }
 
@@ -107,11 +129,20 @@ body {
   height: 2.5em;
   font-weight: 500;
   padding: .5em;
+  display: inline-block;
+  border: none;
 }
 
 .btn-up:hover {
   text-decoration: none;
   color: white;
+}
+
+
+.btn-up-disabled{
+    background-color:   #30343f;
+    border: none;
+    color: white;
 }
 
 /*EVENTOS*/
@@ -126,6 +157,7 @@ body {
 }
 
 /*FOOTER*/
+
 
 .icon-footer {
   margin: 5%;
@@ -178,6 +210,25 @@ body>div>div>div.col-sm-5>div>div.panel-body>ul {
 
 .panel-primary {
   border: none;
+=======
+.icon-footer{
+    margin:5%;
+} 
+.foot{
+   background: linear-gradient(black,  #30343f);
+   margin-top: 15vh;
+}
+
+/*Súmate*/
+.registro-b{
+    height: 50vh;
+    background-image: url(https://media.giphy.com/media/3og0IUTy80RuWleuRi/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.registro-f{
+
 }
 
 .panel-body, .panel-footer {
@@ -214,3 +265,33 @@ body>div>div>div.col-sm-5>div>div.panel-body>ul {
   background: #F4D35E;
   border-radius: 10px;
 }
+
+
+.thumbnail{
+background-color: transparent;
+border: none;
+}
+.p-b{
+    padding-top: 25vh; 
+}
+/*MODAL*/
+.modal-body,.modal-header, .modal-footer{
+    background-color: black;
+    color: #F4D35E;
+}
+
+.inner-addon{
+    position: relative;
+}
+.right-addon .glyphicon{
+    right: 0px;
+}
+.right-addon input{
+    padding-right: 30px;
+}
+
+/*NOSOTROS*/
+.seccion{
+    height: 80vh;
+}
+
