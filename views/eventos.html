@@ -7,6 +7,30 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="icon" href="../assets/img/logo-naranja.png">
+  <link href='../css/fullcalendar.min.css' rel='stylesheet' />
+  <link href='../css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+  <style>
+    body {
+      margin: 40px 10px;
+      padding: 0;
+      font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+      font-size: 14px;
+    }
+    #loading {
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    #calendar {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .fc-unthemed .fc-content, .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-list-view, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
+        border-color: #F4D35E;
+    }
+  </style>
+
 
 </head>
 <body>
@@ -45,6 +69,10 @@
 <div class="container text-center center-align cont-views">
 
 	<h3>PRÓXIMOS EVENTOS</h3>
+    <div class="col-md-12">
+        <div id='loading'>loading...</div>
+        <div id='calendar'></div>
+    </div>
 	<div class="col-sm-8 col-sm-offset-2">
 		<hr class="hr-1">
 		<div class="col-sm-2">
@@ -134,6 +162,31 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src='../js/lib/moment.min.js'></script>
+  <script src='../js/fullcalendar.min.js'></script>
+  <script src='../js/gcal.min.js'></script>
+  <script>
+    $(document).ready(function() {
+          $('#calendar').fullCalendar({
+                header: {
+                  left: 'prev,next hoy',
+                  center: 'title',
+                  right: 'month,listYear'
+                },
+                displayEventTime: false,
+                googleCalendarApiKey: 'AIzaSyAjgRLkKL9yjwSsHWMsE8yKhELssnV5ZSo',
+                events: 'ef591alaskctsnsl2hlhetdo9k@group.calendar.google.com',
+                eventClick: function(event) {
+                      // opens events in a popup window
+                      window.open(event.url, 'gcalevent', 'width=700,height=600');
+                      return false;
+                },
+                loading: function(bool) {
+                    $('#loading').toggle(bool);
+                }
+          });
+    });
+  </script>
   <script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>
